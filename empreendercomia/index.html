@@ -68,6 +68,15 @@ p { margin: 0; }
 .stat small { display: block; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 .stat strong { font-family: var(--display); font-size: 30px; font-weight: 300; font-variant-numeric: tabular-nums; }
 .stat .agora strong { font-weight: 600; }
+ .nums { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.nums div { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: grid; gap: 4px; min-width: 0; }
+.nums strong { font-family: var(--display); font-weight: 600; font-size: 24px; font-variant-numeric: tabular-nums; }
+.nums span { color: var(--muted); font-size: 13px; line-height: 1.35; }
+.fonte { color: #6E6E78; font-size: 12px; }
+.lista { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.lista li { padding: 12px 0; border-bottom: 1px solid var(--line); display: grid; gap: 2px; }
+.lista b { font-weight: 600; }
+.lista span { color: var(--muted); font-size: 14px; }
 .back { justify-self: start; background: none; border: 0; color: var(--ink); font: 600 15px var(--body); padding: 6px 0; cursor: pointer; }
 footer { color: var(--muted); font-size: 13px; }
 @media (max-width: 360px) { .duo { grid-template-columns: 1fr; } }
@@ -125,13 +134,41 @@ footer { color: var(--muted); font-size: 13px; }
     </div>
   </section>
   <section aria-labelledby="t-res">
-    <p class="eyebrow" id="t-res">Tempo de resposta no WhatsApp</p>
+    <p class="eyebrow ele" id="t-res">Operação · a Júlia em números</p>
     <div class="stat">
       <div><small>Antes</small><strong>21 horas</strong></div>
       <div class="agora"><small class="ele">Com a Júlia</small><strong>&lt; 1 minuto</strong></div>
     </div>
-    <p class="lead">Para metade dos clientes, a qualquer hora. A IA faz o repetitivo; o time fica com o que só gente faz.</p>
+    <p class="lead">Tempo de resposta no WhatsApp para metade dos clientes, a qualquer hora.</p>
+    <div class="nums">
+      <div><strong>24 h</strong><span>atendimento todos os dias, inclusive de madrugada</span></div>
+      <div><strong>1 em 4</strong><span>conversas começa fora do horário da loja</span></div>
+      <div><strong>9 em 10</strong><span>conversas têm a Júlia participando</span></div>
+      <div><strong>1 em 5</strong><span>vendas que viram ordem de serviço a Júlia fecha sozinha</span></div>
+      <div><strong>55%</strong><span>das etapas da iMuv já têm automação</span></div>
+      <div><strong>&lt; 4 meses</strong><span>para construir o sistema, de julho a outubro</span></div>
+    </div>
+    <p class="fonte">Fonte: sistema da iMuv, 21/set a 25/out/2026. "Antes": diagnóstico da loja Moinhos. 55% é estimativa por etapas do processo.</p>
   </section>
+
+  <section aria-labelledby="t-rh">
+    <p class="eyebrow ela" id="t-rh">Pessoas · o RH com IA</p>
+    <ul class="lista">
+      <li><b>Ponto digital oficial</b><span>Com comprovante assinado digitalmente a cada batida e arquivos fiscais assinados.</span></li>
+      <li><b>Treinamentos com IA</b><span>A IA cria e corrige as provas, e os cursos também viram áudio.</span></li>
+      <li><b>Feedback por áudio</b><span>O líder fala, a IA transcreve, organiza e sugere o plano de ação.</span></li>
+      <li><b>PDI gerado com IA</b><span>Plano de desenvolvimento a partir das avaliações de cada pessoa.</span></li>
+      <li><b>Reuniões com ata automática</b><span>Encontros gravados, transcritos e resumidos.</span></li>
+      <li><b>Assistente no WhatsApp</b><span>Lembretes e avisos chegam onde o time já está.</span></li>
+      <li><b>Prazos sem esquecer</b><span>Alertas de fim de experiência, documentos e pendências.</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="t-divide">
+    <p class="eyebrow" id="t-divide">A divisão que funciona</p>
+    <p class="lead">A IA faz o repetitivo: responder, lembrar, organizar, corrigir. O time fica com o que só gente faz: diagnóstico, negociação difícil, atendimento olho no olho e o conserto.</p>
+  </section>
+
   <section aria-labelledby="t-quer">
     <h2 id="t-quer">Quer fazer o mesmo na sua empresa?</h2>
     <nav class="links" aria-label="Contato">
