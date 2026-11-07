@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Eduarda Staffen, sócia da iMuv. Ajudo empresas a estruturar e automatizar o RH para crescer.">
+<meta property="og:title" content="Eduarda Staffen">
+<meta property="og:description" content="Ajudo empresas a estruturar e automatizar o RH para crescer.">
+<meta property="og:image" content="https://eduardastaffen.github.io/foto.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="foto.jpg">
+<style>*,*::before,*::after{box-sizing:border-box}html{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Eduarda Staffen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Layout: uma coluna estreita de cartão de visita — topo com nome, botões de escolha, depois "o que eu faço" */
+:root {
+  --bg: #F6F5F8;
+  --surface: #FFFFFF;
+  --ink: #15131C;
+  --muted: #5E5A6B;
+  --line: #E3E0EA;
+  --accent: #D6266A;
+  --accent-ink: #FFFFFF;
+  --soft: #FBE7EF;
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
+  --body: "Figtree", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121018; --surface: #1C1924; --ink: #F3F1F7; --muted: #A9A4B6; --line: #2E2A39;
+  --accent: #FF4D8D; --accent-ink: #1A0710; --soft: #2B1622; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121018; --surface: #1C1924; --ink: #F3F1F7; --muted: #A9A4B6; --line: #2E2A39;
+  --accent: #FF4D8D; --accent-ink: #1A0710; --soft: #2B1622; color-scheme: dark }
+
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 460px; margin: 0 auto; padding-block: 40px 56px; display: grid; gap: 40px; }
+
+header { display: grid; grid-template-columns: 72px 1fr; gap: 14px; align-items: center; }
+header > div { min-width: 0; display: grid; gap: 4px; }
+.avatar { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; display: block; border: 2px solid var(--accent); }
+.back { justify-self: start; background: none; border: 0; color: var(--accent); font: 600 15px var(--body); padding: 6px 0; cursor: pointer; }
+.back:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.btn.trabalho { background: var(--soft); border-color: var(--soft); }
+.view { display: grid; gap: 40px; }
+.mono { width: 76px; height: 76px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--ink); color: var(--bg); font-family: var(--display); font-weight: 700; font-size: 28px; letter-spacing: .02em; }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 7vw, 32px); line-height: 1.05; margin: 0; text-wrap: balance; }
+.role { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.4; }
+.role b { color: var(--ink); font-weight: 600; }
+
+.links { display: grid; gap: 10px; }
+.btn { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 12px; text-decoration: none; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; transition: transform .15s, border-color .15s; }
+.btn:hover { border-color: var(--accent); transform: translateY(-1px); }
+.btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.btn strong { display: block; font-weight: 600; font-size: 17px; }
+.btn span { display: block; color: var(--muted); font-size: 14px; }
+.btn .arrow { font-family: var(--display); font-size: 20px; color: var(--accent); }
+.btn.main { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn.main span, .btn.main .arrow { color: var(--accent-ink); opacity: .85; }
+.tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  background: var(--soft); color: var(--accent); border-radius: 999px; padding: 2px 8px; margin-left: 6px; vertical-align: 2px; }
+
+section { display: grid; gap: 14px; }
+h2 { font-family: var(--display); font-weight: 700; font-size: 22px; margin: 0; }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin: 0; }
+p { margin: 0; }
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
+.list li { padding: 14px 0; border-bottom: 1px solid var(--line); display: grid; gap: 2px; }
+.list li b { font-weight: 600; }
+.list li span { color: var(--muted); font-size: 15px; }
+.ciclo { counter-reset: passo; }
+.ciclo li { grid-template-columns: 28px 1fr; column-gap: 10px; }
+.ciclo li::before { counter-increment: passo; content: counter(passo); grid-row: span 2; font-family: var(--display); font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+.ciclo li b, .ciclo li span { grid-column: 2; }
+.stat { font-family: var(--display); font-weight: 700; font-size: 44px; line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.story { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; display: grid; gap: 8px; }
+footer { color: var(--muted); font-size: 13px; }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:hover { transform: none; } }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+ <div class="view" id="v-inicio">
+  <header>
+    <img class="avatar" src="data:image/jpeg;base64,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" alt="Eduarda Staffen" width="72" height="72">
+    <div>
+      <h1>Eduarda Staffen</h1>
+      <p class="role">Sócia da <b>iMuv</b> · Ajudo empresas a estruturar e automatizar o RH para crescer</p>
+    </div>
+  </header>
+
+  <section aria-labelledby="t-quem">
+    <p class="eyebrow" id="t-quem">Quem sou</p>
+    <p>Na iMuv, assistência técnica Apple, eu cuido das pessoas. Criei com IA uma solução que junta RH, ponto e treinamento num app só, e hoje ajudo empreendedores a contratar, treinar e manter um time que faz a empresa crescer.</p>
+  </section>
+
+  <nav class="links" aria-label="Escolha para onde ir">
+    <a class="btn trabalho" id="l-trabalho" href="#trabalho">
+      <div><strong>Conheça meu trabalho</strong><span>A solução de RH, mentoria, treinamentos e palestras</span></div><div class="arrow">→</div>
+    </a>
+    <a class="btn main" id="l-whats" href="https://wa.me/message/YNU3VBYXPVK2C1" target="_blank" rel="noopener">
+      <div><strong>Falar com a Eduarda</strong><span>WhatsApp</span></div><div class="arrow">→</div>
+    </a>
+    <a class="btn" id="l-iphone" href="https://wa.me/555132735719?text=Oi%2C%20vim%20pelo%20Instagram%20da%20Eduarda%20e%20quero%20comprar%20um%20iPhone" target="_blank" rel="noopener">
+      <div><strong>Comprar iPhone</strong><span>WhatsApp da iMuv Viva Open Mall</span></div><div class="arrow">→</div>
+    </a>
+    <a class="btn" id="l-conserto" href="https://wa.me/555133727735?text=Ol%C3%A1%2C%20vim%20pelo%20Instagram%20da%20Eduarda%20e%20preciso%20de%20ajuda%20com%20meu%20Apple" target="_blank" rel="noopener">
+      <div><strong>Assistência técnica Apple</strong><span>WhatsApp da iMuv Moinhos de Vento</span></div><div class="arrow">→</div>
+    </a>
+    <a class="btn" id="l-site" href="https://imuv.com.br" target="_blank" rel="noopener">
+      <div><strong>Site da iMuv</strong><span>Conserto e serviços Apple</span></div><div class="arrow">→</div>
+    </a>
+    <a class="btn" id="l-vagas" href="https://rh.imuv.com.br/trabalhe-conosco" target="_blank" rel="noopener">
+      <div><strong>Trabalhe na iMuv</strong><span>Envie seu currículo</span></div><div class="arrow">→</div>
+    </a>
+    <a class="btn" id="l-insta" href="https://www.instagram.com/imuv_oficial" target="_blank" rel="noopener">
+      <div><strong>iMuv Moinhos de Vento</strong><span>Instagram @imuv_oficial</span></div><div class="arrow">→</div>
+    </a>
+    <a class="btn" id="l-insta-viva" href="https://www.instagram.com/imuv_viva" target="_blank" rel="noopener">
+      <div><strong>iMuv Viva Open Mall</strong><span>Instagram @imuv_viva</span></div><div class="arrow">→</div>
+    </a>
+  </nav>
+  <footer>Eduarda Staffen · @eduardastaffen</footer>
+ </div>
+
+ <div class="view" id="v-trabalho" hidden>
+  <button class="back" id="b-voltar" type="button">← Voltar</button>
+
+  <section aria-labelledby="t-pra-quem">
+    <p class="eyebrow">Para quem é</p>
+    <h2 id="t-pra-quem">Empresas com 5 pessoas ou mais que querem crescer</h2>
+    <p>Se você ainda controla o time em planilha, papel e WhatsApp, perde tempo e perde gente boa. Eu ajudo a colocar ordem na gestão de pessoas, com controle de verdade, para o crescimento da empresa vir junto com o crescimento do time.</p>
+  </section>
+
+  <section aria-labelledby="t-solucao">
+    <div class="story">
+      <p class="eyebrow">A solução</p>
+      <h2 id="t-solucao">RH, ponto e treinamento num app só</h2>
+      <p>Criei com IA o sistema que hoje roda o RH da iMuv. O time usa no celular, e o que dava para automatizar está automatizado: lembretes de prazos, alertas, documentos e relatórios. Esse sistema pode rodar na sua empresa.</p>
+    </div>
+    <ol class="list ciclo">
+      <li><b>Recrutamento e seleção</b><span>Vagas, triagem de currículos e teste de perfil comportamental (DISC).</span></li>
+      <li><b>Admissão e integração</b><span>Documentos de admissão online e onboarding para quem chega.</span></li>
+      <li><b>Treinamento</b><span>Trilhas de cursos, provas e encontros para cada função.</span></li>
+      <li><b>Desenvolvimento</b><span>Avaliações, feedbacks, PDI, matriz de competências e plano de carreira.</span></li>
+      <li><b>Ponto e rotina</b><span>Ponto digital integrado, escalas, férias e ausências, bônus por assiduidade e holerites assinados.</span></li>
+      <li><b>Clima e escuta</b><span>Pesquisa de clima, canal de escuta anônimo e mural de avisos.</span></li>
+      <li><b>Desligamento</b><span>Processo organizado e documentado, com respeito a quem sai.</span></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="t-palestras">
+    <p class="eyebrow">Treinamentos e palestras</p>
+    <h2 id="t-palestras">Para líderes e donos de empresa</h2>
+    <ul class="list">
+      <li><b>Como contratar</b><span>Encontrar, avaliar e escolher a pessoa certa para a vaga.</span></li>
+      <li><b>Como treinar o time</b><span>Integração e treinamento que deixam a pessoa pronta mais rápido.</span></li>
+      <li><b>Como desenvolver pessoas</b><span>Feedback, avaliação e plano de carreira na prática.</span></li>
+      <li><b>Como reter talentos</b><span>O que faz as pessoas boas ficarem na empresa.</span></li>
+      <li><b>Como demitir</b><span>Um desligamento justo, legal e humano.</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="t-oferta">
+    <p class="eyebrow">Vamos conversar</p>
+    <h2 id="t-oferta">Como posso ajudar a sua empresa</h2>
+    <nav class="links" aria-label="Ofertas">
+    <a class="btn main" id="l-sistema" href="https://wa.me/message/YNU3VBYXPVK2C1" target="_blank" rel="noopener">
+      <div><strong>Quero conhecer o sistema</strong><span>RH, ponto e treinamento para a minha empresa</span></div><div class="arrow">→</div>
+    </a>
+    <a class="btn" id="l-mentoria" href="https://wa.me/message/YNU3VBYXPVK2C1" target="_blank" rel="noopener">
+      <div><strong>Mentoria em gestão de pessoas</strong><span>Acompanhamento para estruturar o RH</span></div><div class="arrow">→</div>
+    </a>
+    <a class="btn" id="l-palestra" href="https://wa.me/message/YNU3VBYXPVK2C1" target="_blank" rel="noopener">
+      <div><strong>Treinamentos e palestras</strong><span>Para a sua equipe ou o seu evento</span></div><div class="arrow">→</div>
+    </a>
+    <a class="btn" id="l-curso" href="https://wa.me/message/YNU3VBYXPVK2C1" target="_blank" rel="noopener">
+      <div><strong>Curso: RH automatizado com IA <em class="tag">Em breve</em></strong><span>Entre na lista e seja avisado primeiro</span></div><div class="arrow">→</div>
+    </a>
+    </nav>
+  </section>
+
+  <section aria-labelledby="t-hist">
+    <p class="eyebrow">Minha história</p>
+    <h2 id="t-hist">O pior que eu podia passar, eu já passei</h2>
+    <p>Saí de casa aos 17 e fui mãe aos 18. Minha primeira filha, a Anne Luara, enfrentou a leucemia por quatro anos e partiu aos 6, em 2015. Depois disso, nada mais me assusta.</p>
+    <p>Não gosto de reclamar: se você me traz um problema, eu volto com cinco soluções. É assim que trabalho com as empresas que atendo.</p>
+  </section>
+ </div>
+</div>
+
+<script>
+(function () {
+  var inicio = document.getElementById('v-inicio'), trabalho = document.getElementById('v-trabalho');
+  var aberto = false;
+  function mostrar(forcar) {
+    var t = typeof forcar === 'boolean' ? forcar : location.hash === '#trabalho';
+    trabalho.hidden = !t; inicio.hidden = t;
+    window.scrollTo(0, 0);
+  }
+  document.getElementById('b-voltar').addEventListener('click', function () {
+    try { if (location.hash) { history.pushState('', '', location.pathname + location.search); } } catch (e) {}
+    mostrar(false);
+  });
+  document.getElementById('l-trabalho').addEventListener('click', function (ev) {
+    ev.preventDefault();
+    try { history.pushState('', '', '#trabalho'); } catch (e) {}
+    mostrar(true);
+  });
+  window.addEventListener('hashchange', function () { mostrar(); });
+  window.addEventListener('popstate', function () { mostrar(); });
+  mostrar();
+})();
+</script>
+
+</body>
+</html>
